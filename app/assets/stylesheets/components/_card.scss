@@ -13,7 +13,13 @@
 .card-trip > img {
   height: 200px;
   width: 100%;
+  justify-content: center;
   object-fit: cover;
+}
+
+.card-trip-large > img {
+  height: 500px;
+  width: 500px;
 }
 
 .card-trip h2 {

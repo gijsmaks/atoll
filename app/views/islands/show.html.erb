@@ -1,17 +1,17 @@
 
 
 <div class="container">
-  <div class="card-trip-large">
+  <div class="card-trip">
     <h2> The island <%= @island.name %></h2>
     <p> In the <%= @island.location %> </p>
 
-    <div class="carousel">
+    <div class="card-trip-large">
     <%= cl_image_tag @island.photo %>
     </div>
 
     <div>
-    <%= @island.price %>
-    <%= @island.description %>
+    <p><%= @island.price %></p>
+    <p><%= @island.description %></p>
     </div>
   </div>
 </div>
