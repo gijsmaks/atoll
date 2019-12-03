@@ -1,2 +1,22 @@
-<h1>Islands#index</h1>
-<p>Find me in app/views/islands/index.html.erb</p>
+
+
+<div class="container mt-3">
+  <h1>Islands</h1>
+  <div class="cards">
+    <% @islands.each do |island| %>
+      <div class="card-trip">
+        hello
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier"%>
+        <div class="card-trip-infos">
+          <div>
+            <h2>island.title</h2>
+            <p>island.description</p>
+          </div>
+          <h2 class="card-trip-pricing">£99.99</h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
