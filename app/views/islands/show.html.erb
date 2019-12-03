@@ -1,2 +1,9 @@
 <h1>Islands#show</h1>
 <p>Find me in app/views/islands/show.html.erb</p>
+
+<h2> The island <%= @island.name %> </h2>
+<p> <%= @island.location %> </p>
+
+<%= @island.description %>
+<%= @island.price %>
+<%= image_tag @island.photo %>
