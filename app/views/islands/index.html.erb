@@ -5,7 +5,7 @@
   <div class="cards">
     <% @islands.each do |island| %>
       <div class="card-trip">
-        <%= image_tag island.photo%>
+        <%= cl_image_tag island.photo%>
         <div class="card-trip-infos">
           <div>
             <h2><%= island.name %></h2>
