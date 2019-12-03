@@ -5,14 +5,14 @@
   <div class="cards">
     <% @islands.each do |island| %>
       <div class="card-trip">
-        hello
-        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier"%>
+        <%= image_tag island.photo%>
         <div class="card-trip-infos">
           <div>
-            <h2>island.title</h2>
-            <p>island.description</p>
+            <h2><%= island.name %></h2>
+            <p><%= island.description %></p>
+            <p><%= island.location %></p>
           </div>
-          <h2 class="card-trip-pricing">£99.99</h2>
+          <h2 class="card-trip-pricing">$<%= island.price %></h2>
           <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
         </div>
       </div>
