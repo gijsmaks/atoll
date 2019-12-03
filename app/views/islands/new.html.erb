@@ -1,2 +1,10 @@
-<h1>Islands#new</h1>
-<p>Find me in app/views/islands/new.html.erb</p>
+<h1>Host a new island</h1>
+
+<%= simple_form_for (@island) do |f| %>
+  <%= f.input :name, placeholder: "Your island's name", label: false %>
+  <%= f.input :location, collection: [ 'Pacific','Indian','Atlantic' ], prompt: "Your island's location", label: false %>
+  <%= f.input :description, placeholder: "Your island's description", label: false  %>
+  <%= f.input :price, placeholder: "Your island's price (per night)", label: false %>
+
+  <%= f.button :submit %>
+<% end %>
