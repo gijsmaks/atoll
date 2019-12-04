@@ -13,14 +13,15 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 60px;
   font-weight: bold;
+  margin-bottom: 32px;
 }
 
 .banner h2 {
   font-size: 20px;
   color: white;
-  opacity: .7;
+  opacity: .8;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  margin-bottom: 40px;
+  margin-bottom: 64px;
 }
 
 
@@ -36,6 +37,9 @@
   bottom: 4px;
   right: 4px;
   color: #8B9398;
+  &:hover {
+    color: #11AEB7;
+  }
 }
 
 .search-form-control .form-control {
@@ -45,15 +49,7 @@
 }
 
 .search-form-control .form-control:focus {
-  border: 1px solid #1EDD88;
+  border: 1px solid #11AEB7;
   outline: none !important;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
-
-
-
-
-
-
-
-
