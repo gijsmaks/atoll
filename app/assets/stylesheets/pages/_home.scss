@@ -1,3 +1,32 @@
+// Banner
+
+.banner {
+  background-size: 100%;
+  background-position: center;
+  padding: 150px 0;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.banner h2 {
+  font-size: 20px;
+  color: white;
+  opacity: .8;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin-bottom: 64px;
+}
+
+// Search
+
 .search-form-control {
   position: relative;
   width: 500px;
@@ -25,28 +54,3 @@
   outline: none !important;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
-
-.banner {
-  background-size: 100%;
-  background-position: center;
-  padding: 150px 0;
-  height: 100vh;
-  background-repeat: no-repeat;
-}
-
-.banner h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 60px;
-  font-weight: bold;
-}
-
-.banner h2 {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  margin-bottom: 40px;
-}
-
