@@ -3,5 +3,10 @@ body {
 }
 
 .price-description {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 975px;
 }
