@@ -1,7 +1,10 @@
 
 
-<div class="container mt-3">
-  <h1>Islands</h1>
+<body>
+<div class="background">
+
+<div class="container">
+  <h1 ><% Island.count %> Islands in Central America </h1>
   <div class="cards">
     <% @islands.each do |island| %>
       <%= link_to island_path(island), target: :_blank do %>
@@ -10,15 +13,16 @@
           <div class="card-trip-infos">
             <div>
               <h2><%= island.name %></h2>
-              <p><%= island.description %></p>
               <p><%= island.location %></p>
+              <p><%= island.description %></p>
             </div>
             <h2 class="card-trip-pricing">$<%= island.price %></h2>
-            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+            <!-- <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" /> -->
           </div>
         </div>
       <% end %>
     <% end %>
   </div>
 </div>
-
+</div>
+</body>
