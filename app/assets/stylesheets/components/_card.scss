@@ -11,6 +11,7 @@
   padding-top: 40px;
   padding-bottom: 20px;
   padding-left: 10px;
+  font-size: 30px;
 }
 
 .cards {
@@ -23,6 +24,11 @@
 .cards a {
   text-decoration: none !important;
   color: black;
+}
+
+.cards a:hover {
+  color: #11AEB7;
+  transition: 0.3s;
 }
 
 .card-trip {
@@ -38,6 +44,10 @@
   width: 100%;
   justify-content: center;
   object-fit: cover;
+}
+
+.card-trip > img:hover {
+  opacity: 0.8;
 }
 
 .card-trip h2 {
