@@ -12,7 +12,7 @@
   justify-content: space-between;
   background: white;
   padding: 4px 16px;
-  border-bottom: 1px solid #6E777F;
+  border-bottom: 1px solid rgba(110, 119, 127, 0.1);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -30,6 +30,7 @@
 .nav-link {
   margin-left: 16px;
   color: #6E777F;
+  transition: color 0.5s ease;
   &:hover {
     color: #11AEB7 !important;
     text-decoration: none;
