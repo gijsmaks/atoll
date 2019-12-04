@@ -1,17 +1,13 @@
-
-
-<div class="container">
-  <div class="card-trip">
-    <h2> The island <%= @island.name %></h2>
+<div class="container mt-3">
+  <div class="card-trip-large">
+    <h2><%= @island.name %></h2>
     <p> In the <%= @island.location %> </p>
-
-    <div class="card-trip-large">
     <%= cl_image_tag @island.photo %>
-    </div>
 
-    <div>
-    <p><%= @island.price %></p>
-    <p><%= @island.description %></p>
+    <div class="price-description mt-3">
+        <p>$<%= @island.price %> per night</p>
+        <p><%= @island.description %></p>
     </div>
   </div>
 </div>
+

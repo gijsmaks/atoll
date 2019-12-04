@@ -4,7 +4,7 @@
   <h1>Islands</h1>
   <div class="cards">
     <% @islands.each do |island| %>
-      <%= link_to island_path(island) do %>
+      <%= link_to island_path(island), target: :_blank do %>
         <div class="card-trip">
           <%= cl_image_tag island.photo%>
           <div class="card-trip-infos">
