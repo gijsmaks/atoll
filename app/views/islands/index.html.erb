@@ -4,7 +4,7 @@
 <div class="background">
 
 <div class="container">
-  <h1 ><% Island.count %> Islands in Central America </h1>
+  <h1 ><%= Island.count %> Islands in <strong>Central America</strong> </h1>
   <div class="cards">
     <% @islands.each do |island| %>
       <%= link_to island_path(island), target: :_blank do %>
