@@ -5,12 +5,14 @@
   font-weight: 900;
   letter-spacing: 2px;
   color: #000;
-  margin: 0
+  margin: 0;
 }
 
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  padding: 4px 16px;
+  border-bottom: 1px solid #6E777F;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -21,4 +23,15 @@
   width: 40px;
 }
 
+.nav-item {
+  margin-left: 16px;
+}
 
+.nav-link {
+  margin-left: 16px;
+  color: #6E777F;
+  &:hover {
+    color: #11AEB7 !important;
+    text-decoration: none;
+  }
+}
