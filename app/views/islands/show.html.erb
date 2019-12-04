@@ -1,9 +1,10 @@
-
 <div class="container mt-3">
   <div class="card-trip-large">
-    <h2><%= @island.name %></h2>
-    <p> In the <%= @island.location %> </p>
-    <%= cl_image_tag @island.photo %>
+    <div class="mt-3 mb-3">
+      <h2><%= @island.name %></h2>
+      <p> In the <%= @island.location %> </p>
+    </div>
+      <%= cl_image_tag @island.photo %>
 
     <div class="price-description mt-3">
       <p><%= @island.description %></p>
