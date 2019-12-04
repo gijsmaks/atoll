@@ -10,3 +10,15 @@ body {
 .container {
   max-width: 975px;
 }
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  background: #11AEB7;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
+}
