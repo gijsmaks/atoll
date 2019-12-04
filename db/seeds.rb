@@ -10,11 +10,26 @@ Island.destroy_all
 
 gijs = User.create(first_name: "Gijs", email: "best@island.com", password: "secret")
 
-Island.create!(user: gijs, name: 'My island', description: 'White sandy beach', price: '20000', location: "Bahamas", photo: "https://images.pexels.com/photos/240526/pexels-photo-240526.jpeg?cs=srgb&dl=beach-coconut-trees-coconuts-daylight-240526.jpg&fm=jpg")
+Island.create!(user: gijs, name: 'My island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
 
-Island.create!(user: gijs, name: 'Your island', description: 'White sandy beach', price: '20000', location: "Bahamas", photo: "https://images.pexels.com/photos/240526/pexels-photo-240526.jpeg?cs=srgb&dl=beach-coconut-trees-coconuts-daylight-240526.jpg&fm=jpg")
+sleep(3)
 
-Island.create!(user: gijs, name: 'Island', description: 'White sandy beach', price: '20000', location: "Bahamas", photo: "https://images.pexels.com/photos/240526/pexels-photo-240526.jpeg?cs=srgb&dl=beach-coconut-trees-coconuts-daylight-240526.jpg&fm=jpg")
+Island.create!(user: gijs, name: 'Your island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
 
+sleep(3)
+
+Island.create!(user: gijs, name: 'Island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
+
+sleep(3)
+
+Island.create!(user: gijs, name: 'My island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
+
+sleep(3)
+
+Island.create!(user: gijs, name: 'Your island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
+
+sleep(3)
+
+Island.create!(user: gijs, name: 'Island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
 
 puts Island.count
