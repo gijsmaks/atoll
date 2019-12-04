@@ -18,7 +18,7 @@ Island.create!(user: gijs, name: 'Roatán', description: 'Surrounded by water', 
 
 sleep(3)
 
-Island.create!(user: gijs, name: 'Island de le wagon', description: 'Beautiful', price: '1200', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
+Island.create!(user: gijs, name: 'Island of Malou', description: 'Beautiful', price: '1200', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
 
 sleep(3)
 
