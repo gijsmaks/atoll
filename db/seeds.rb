@@ -10,26 +10,26 @@ Island.destroy_all
 
 gijs = User.create(first_name: "Gijs", email: "best@island.com", password: "secret")
 
-Island.create!(user: gijs, name: 'My island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
+Island.create!(user: gijs, name: 'My island', description: 'White sandy beach', price: '1.000', location: "Fiji", remote_photo_url: "https://source.unsplash.com/random?island")
 
 sleep(3)
 
-Island.create!(user: gijs, name: 'Your island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
+Island.create!(user: gijs, name: 'Your island', description: 'Surrounded by water', price: '500', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
 
 sleep(3)
 
-Island.create!(user: gijs, name: 'Island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
+Island.create!(user: gijs, name: 'Island', description: 'Beautiful', price: '15.000', location: "Middle America", remote_photo_url: "https://source.unsplash.com/random?island")
 
 sleep(3)
 
-Island.create!(user: gijs, name: 'My island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
+Island.create!(user: gijs, name: 'My island', description: 'Volcano island', price: '10.000', location: "Java", remote_photo_url: "https://source.unsplash.com/random?island")
 
 sleep(3)
 
-Island.create!(user: gijs, name: 'Your island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
+Island.create!(user: gijs, name: 'Island of Avalon', description: 'Your home', price: '20.000', location: "Avalon", remote_photo_url: "https://source.unsplash.com/random?island")
 
 sleep(3)
 
-Island.create!(user: gijs, name: 'Island', description: 'White sandy beach', price: '20000', location: "Bahamas", remote_photo_url: "https://source.unsplash.com/random?island")
+Island.create!(user: gijs, name: 'Island', description: 'Strictly business', price: '1.500', location: "Hawai", remote_photo_url: "https://source.unsplash.com/random?island")
 
 puts Island.count
