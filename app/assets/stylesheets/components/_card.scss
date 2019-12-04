@@ -26,10 +26,10 @@
   color: black;
 }
 
-.cards a:hover {
-  color: #11AEB7;
-  transition: 0.3s;
-}
+// .cards a:hover {
+//   color: #11AEB7;
+//   transition: 0.3s;
+// }
 
 .card-trip {
   overflow: hidden;
@@ -48,6 +48,7 @@
 
 .card-trip > img:hover {
   opacity: 0.8;
+  transition: 0.3s;
 }
 
 .card-trip h2 {
