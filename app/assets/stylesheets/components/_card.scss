@@ -1,17 +1,40 @@
+.background {
+  background-color: white;
+  height: 100vh;
+}
+
+.container h2 {
+  margin-top: 5px !important;
+}
+
+.background h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+  height: 100vh;
+}
+
+.cards a {
+  text-decoration: none !important;
+  color: black;
 }
 
 .card-trip {
   overflow: hidden;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 15px 10px
+  // box-shadow: 0 0 1px rgba(0,0,0,0.2);
+  margin: 15px 15px;
+  border-radius: 5px;
 }
 
 .card-trip > img {
-  height: 200px;
+  height: 300px;
   width: 100%;
   object-fit: cover;
 }
@@ -28,12 +51,11 @@
   margin: 0;
 }
 
-
 .card-trip .card-trip-infos {
-  padding: 16px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  // align-items: flex-end;
   position: relative;
 }
 
@@ -43,3 +65,20 @@
   top: -20px;
   width: 40px;
 }
+
+.card-trip-pricing h2 {
+  margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
