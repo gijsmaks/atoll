@@ -2,7 +2,7 @@
 
 <%= simple_form_for (@island) do |f| %>
   <%= f.input :name, placeholder: "Your island's name", label: false %>
-  <%= f.input :location, collection: [ 'Pacific','Indian','Atlantic' ], prompt: "Your island's location", label: false %>
+  <%= f.input :location, collection: [ 'All locations', 'Pacific','Indian','Atlantic' ], prompt: "Your island's location", label: false %>
   <%= f.input :description, placeholder: "Your island's description", label: false  %>
   <%= f.input :price, placeholder: "Your island's price (per night)", label: false %>
   <%= f.input :photo %>
