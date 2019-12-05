@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Booking.destroy_all
 Island.destroy_all
 
 gijs = User.create(first_name: "Gijs", email: "best@island.com", password: "secret")
@@ -14,17 +14,23 @@ Island.create!(user: gijs, name: 'Island of Patroklos', description: 'A cultural
 
 sleep(2)
 
+
 Island.create!(user: gijs, name: 'Rangyai Island', description: 'Located just east of the island of Phuket, an island popular with tourists and estate owners, Rangyai is the largest island currently available for sale in the region. The island is close to both Phuket and Coconut Island both of which are home to numerous resorts, and are very popular with tourists. Ranyai Island is an advantageous position in the area, allowing the prospective owner to capitalize on the development potential of this property.', price: '500', location: "Phuket", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+
+# sleep(2)
+
 
 Island.create!(user: gijs, name: 'Pumpkin Key', description: 'Pumpkin Key is an extraordinary private island totaling 26 acres in the tropics of Card Sound Bay located in the Florida Keys. Just 10 minutes by helicopter to Miami infamous South Beach and 10 minutes by boat to its shore home with dockage at Ocean Reef, a private club in Key Largo, Florida with an airstrip for private jets. This island with its proximity to Ocean Reef and Miami, offers the opportunity for privacy without isolation. The lush and vibrant landscape offers endless possibilities for development. Self sufficient with water and electric in place from shore to the 12 large bay front lots.', price: '1200', location: "Key Largo", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+
+# sleep(2)
+
 
 Island.create!(user: gijs, name: 'Spectabilis Island', description: 'The Extraordinary Oasis of The Caribbean. This island sanctuary is offered only to the discerning buyer who has reached the apogee in society and who is seeking and able to afford the absolute best of the best in the world, while having absolute privacy and unmatched beauty. Spectabilis Island is conveniently located in the central Exuma Cays approximately 60 miles from the capital and 230 miles from Miami.', price: '5000', location: "Exumas", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+# sleep(2)
+
 
 Island.create!(user: gijs, name: 'Cave Cay', description: 'Rarely does an island with the attributes of Cave Cay become available. Stunning natural beauty, a protected and private, deep-water harbour and marina with floating cement dock system and 35 dock slips, plus a 2,800 ft. private airstrip make this the perfect private island.
 
@@ -74,7 +80,9 @@ Island.create!(user: gijs, name: 'Taveuni Island', description: 'A rare opportun
 
 Along with a list of international awards, Taveuni Island Resort & Spa’s most recent recognition, and one of its most prestigious, to start the year was the Trip Advisor ‘2017 Travelers Choice’ Award, reaffirming this premier resort and spa has all the elements synonymous with top luxury serene island retreats.', price: '1500', location: "Taveuni", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+
+# sleep(2)
+
 
 Island.create!(user: gijs, name: 'Vadinolhu Island', description: 'This is a 150 room resort development with joint venture opportunity!
 
@@ -95,7 +103,6 @@ sleep(2)
 Island.create!(user: gijs, name: 'Igoigori Island', description: "Milne Bay is a beautiful maritime and peaceful and safe province in the southeastern tip of Papua New Guinea. This area is renowned for its beautiful coral reefs, as being a diver's paradise, and for the fascinating culture of some of its islands. Its has more than 600 islands, of which only 160 are inhabited.
 
 The coral reef system of Milne Bay are some of the most bio-diverse in the world and as such attract equal attention from dive operators as well.", price: '1500', location: "Milne Bay province", remote_photo_url: "https://source.unsplash.com/random?island")
-
 
 puts Island.count
 

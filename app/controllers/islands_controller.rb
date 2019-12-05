@@ -2,6 +2,7 @@ class IslandsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:show, :index]
 
   def index
+
     @islands = Island.geocoded #Island.wherenot(lat:nil, lng: nil)
     @markers = @islands.map do |island|
       {
