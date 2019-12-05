@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Booking.destroy_all
 Island.destroy_all
 
 gijs = User.create(first_name: "Gijs", email: "best@island.com", password: "secret")
@@ -14,22 +14,22 @@ Island.create!(user: gijs, name: 'Utila', description: 'White sandy beach', pric
 
 sleep(2)
 
-Island.create!(user: gijs, name: 'Roatán', description: 'Surrounded by water', price: '500', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
+# Island.create!(user: gijs, name: 'Roatán', description: 'Surrounded by water', price: '500', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+# sleep(2)
 
-Island.create!(user: gijs, name: 'Island of Malou', description: 'Beautiful', price: '1200', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
+# Island.create!(user: gijs, name: 'Island of Malou', description: 'Beautiful', price: '1200', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+# sleep(2)
 
-Island.create!(user: gijs, name: 'Guanaja', description: 'Volcanic island', price: '5000', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
+# Island.create!(user: gijs, name: 'Guanaja', description: 'Volcanic island', price: '5000', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+# sleep(2)
 
-Island.create!(user: gijs, name: 'Island of Avalon', description: 'Your home', price: '8000', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
+# Island.create!(user: gijs, name: 'Island of Avalon', description: 'Your home', price: '8000', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+# sleep(2)
 
-Island.create!(user: gijs, name: 'Corfu', description: 'Strictly business', price: '1500', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
+# Island.create!(user: gijs, name: 'Corfu', description: 'Strictly business', price: '1500', location: "Central America", remote_photo_url: "https://source.unsplash.com/random?island")
 
 puts Island.count
