@@ -3,13 +3,13 @@
     <div class="col-10 offset-1 col-md-4 offset-md-4">
       <h1>Host a new island</h1>
       <%= simple_form_for (@island) do |f| %>
-      <%= f.input :name, placeholder: "Your island's name", label: false %>
-      <%= f.input :location, collection: [ 'All locations', 'Pacific','Indian','Atlantic' ], prompt: "Your island's location", label: false %>
-      <%= f.input :description, placeholder: "Your island's description", label: false, :as => :text, input_html: { :style=> 'width: 100%;', :rows => 8} %>
-      <%= f.input :price, placeholder: "Your island's price (per night)", label: false %>
-      <%= f.input :photo %>
-      <%= f.input :photo_cache, as: :hidden %>
-      <%= f.button :submit, class:"btn btn-atoll w-100" %>
+        <%= f.input :name, placeholder: "Your island's name", label: false %>
+        <%= f.input :location, placeholder: "Your island's location", label: false %>
+        <%= f.input :description, placeholder: "Your island's description", label: false, :as => :text, input_html: { :style=> 'width: 100%;', :rows => 8} %>
+        <%= f.input :price, placeholder: "Your island's price (per night)", label: false %>
+        <%= f.input :photo, label: false%>
+        <%= f.input :photo_cache, as: :hidden %>
+        <%= f.button :submit, class:"btn btn-atoll w-100" %>
       <% end %>
     </div>
   </div>
