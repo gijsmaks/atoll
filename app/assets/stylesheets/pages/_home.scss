@@ -1,10 +1,11 @@
 // Banner
 
 .banner {
+  top: 0;
   background-size: 100%;
   background-position: center;
   padding: 150px 0;
-  height: 100vh;
+  height: calc(100vh - 73px);
   background-repeat: no-repeat;
 }
 
