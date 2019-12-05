@@ -7,7 +7,9 @@ class IslandsController < ApplicationController
     @markers = @islands.map do |island|
       {
         lat: island.latitude,
-        lng: island.longitude
+        lng: island.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { islands: island }),
+        image_url: helpers.asset_url('https://avatars2.githubusercontent.com/u/5470001?s=200&v=4')
       }
     end
   end
