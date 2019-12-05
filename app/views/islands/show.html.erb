@@ -6,7 +6,7 @@
         <p> In the <%= @island.location %> </p>
       </div>
       <div>
-        <a class="btn btn-book mt-3" href="#">Book now</a>
+        <%= link_to "Book Now", new_island_booking_path(@island), class:"btn btn-book mt-3" %>
       </div>
     </div>
       <%= cl_image_tag @island.photo %>

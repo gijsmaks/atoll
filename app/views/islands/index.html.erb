@@ -8,7 +8,7 @@
   <div class="cards-title"><h1 ><%= Island.count %> Islands in <strong>Central America</strong> </h1></div>
   <div class="cards">
     <% @islands.each do |island| %>
-      <%= link_to island_path(island), target: :_blank do %>
+      <%= link_to island_path(island) do %>
         <div class="card-trip">
           <%= cl_image_tag island.photo%>
           <div class="card-trip-infos">
