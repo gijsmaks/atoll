@@ -1,6 +1,12 @@
 class IslandsController < ApplicationController
   def index
-    @islands = Island.all
+    @islands = Island.geocoded #Island.wherenot(lat:nil, lng: nil)
+    @markers = @islands.map do |island|
+      {
+        lat: island.latitude,
+        lng: island.longitude
+      }
+    end
   end
 
   def show
