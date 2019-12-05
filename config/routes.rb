@@ -6,6 +6,4 @@ Rails.application.routes.draw do
   resources :islands, only: [:index, :show, :new, :create] do
     resources :bookings, only: [:new, :create]
   end
-
-  end
 end
