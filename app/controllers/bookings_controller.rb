@@ -1,8 +1,4 @@
 class BookingsController < ApplicationController
-  def index
-    @bookings = Booking.all
-  end
-
   def new
     @booking = Booking.new
     @island = Island.find(params[:island_id])
@@ -22,10 +18,26 @@ class BookingsController < ApplicationController
   end
 
   def show
-
+    @booking = Booking.find(params[:id])
   end
 
+  def accept_booking
+    @booking = Booking.find(params[:id])
+    @booking.status = "accepted"
+    #change redirection after changes
+    redirect_to islands_path
+  end
+
+  def reject
+    @booking = Booking.find(params[:id])
+    @booking.status = "rejected"
+    #change redirection after changes
+    redirect_to islands_path
+  end
+
+  private
+
   def booking_params
-    params.require(:booking).permit(:user_id, :island_id, :start_date, :end_date, :status)
+    params.require(:booking).permit(:start_date, :end_date)
   end
 end
