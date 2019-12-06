@@ -1,3 +1,24 @@
-<h1>Confirmation</h1>
+<div class="container mt-3">
+  <div class="card-trip-large">
+    <h2>Confirmation</h2>
+    <div class="d-flex justify-content-between mt-3 mb-3">
+      <div>
+        <h2><%= @booking.island.name %></h2>
+        <p> <%= @booking.island.location %> </p>
+      </div>
+      <div>
+        <%= link_to "Book Another Island", islands_path, class:"btn btn-book mt-3" %>
+      </div>
+    </div>
+      <%= cl_image_tag @booking.island.photo %>
+
+    <div class="price-description mt-3">
+      <div class="float-right">
+        <h4><strong>$<%= @booking.island.price %></strong></h4>
+        <p>per night</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
