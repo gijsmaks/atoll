@@ -2,8 +2,13 @@ class IslandsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:show, :index]
 
   def index
+    if params[:query].present?
+      sql_query = "location ILIKE :query OR description ILIKE :query"
+      @islands = Island.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @islands = Island.geocoded
+    end
 
-    @islands = Island.geocoded #Island.wherenot(lat:nil, lng: nil)
     @markers = @islands.map do |island|
       {
         lat: island.latitude,
