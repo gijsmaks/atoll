@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between mt-3 mb-3">
       <div>
         <h2><%= @island.name %></h2>
-        <p> In the <%= @island.location %> </p>
+        <p> <%= @island.location %> </p>
       </div>
       <div>
         <%= link_to "Book Now", new_island_booking_path(@island), class:"btn btn-book mt-3" %>
@@ -12,11 +12,14 @@
       <%= cl_image_tag @island.photo %>
 
     <div class="price-description mt-3">
-      <div class="trip-description">
+      <div class="trip-description" style="width: 500px">
         <h3>Description</h3>
         <p id="description-text"><%= @island.description %></p>
       </div>
-      <p>$<%= @island.price %> per night</p>
+      <div class="float-right">
+      <h4><strong>$<%= @island.price %></strong></h4>
+      <p>per night</p>
+    </div>
     </div>
   </div>
 </div>
