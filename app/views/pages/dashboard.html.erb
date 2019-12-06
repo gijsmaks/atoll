@@ -1,0 +1,29 @@
+<h1 class="mt-5">My bookings</h1>
+
+<ul>
+  <% current_user.bookings.each do |booking| %>
+    <li><%= booking.island.name %> <%= booking.status %></li>
+  <% end %>
+</ul>
+
+
+<h1>My hostings</h1>
+
+<ul>
+  <% current_user.islands.each do |island| %>
+    <li><%= island.name %></li>
+    <ul>
+      <% island.bookings.each do |booking| %>
+        <% if booking.status == "pending" %>
+        <li>
+          <%= booking.user.first_name %> <%= booking.start_date %> <%= booking.end_date %>
+          <%= link_to "Accept", accept_booking_booking_path(booking), class:"btn btn-book mt-3" %>
+          <%= link_to "Decline", refuse_booking_booking_path(booking), class:"btn btn-book mt-3" %>
+        </li>
+        <% end %>
+      <% end %>
+    </ul>
+  <% end %>
+</ul>
+
+
