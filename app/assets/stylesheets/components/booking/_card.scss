@@ -96,6 +96,7 @@
   font-size: 34px;
   font-weight: bold;
   margin: 0;
+  width: 500px;
 }
 
 .card-trip-large h3 {
@@ -117,4 +118,9 @@
   font-weight: 400;
   opacity: .9;
   margin: 0;
+}
+
+.card-trip-dates {
+  flex-grow: 1;
+  align-items: center;
 }
