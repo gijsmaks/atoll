@@ -8,6 +8,7 @@ class IslandsController < ApplicationController
     else
       @islands = Island.geocoded
     end
+
     @markers = @islands.map do |island|
       {
         lat: island.latitude,
