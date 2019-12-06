@@ -10,22 +10,23 @@ Island.destroy_all
 User.destroy_all
 
 gijs = User.create(first_name: "Gijs", email: "best@island.com", password: "secret")
+ed = User.create(first_name: "Ed", email: "ed@island.com", password: "secret")
 
 Island.create!(user: gijs, name: 'Little Whale Cay', description: 'Little Whale Cay is a beautiful, fully staffed private island you can rent in the Bahamas, promising you an unforgettable tailor-made vacation built around you and everything you could wish for in the holiday of a lifetime.', price: '800', location: "Caribbean", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+sleep(3)
 
 Island.create!(user: gijs, name: 'Cayo Algodón Grande', description: 'Cayo Algodón Grande makes for a perfect romantic getaway. It is also a great opportunity for an adventurous family to make memories to treasure for a lifetime. It is the perfect place to escape for a getaway or retreat. Enjoy 360 degree views ofthe famous candy-striped lighthouse and pristine waters from every location on site: from your room, the comfort of your private deck, or while relaxing in the hot tub.', price: '700', location: "Caribbean", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+sleep(3)
 
 Island.create!(user: gijs, name: 'Nassau', description: 'Separated from the Andros mainland by a turquoise inlet, Kamalame Cay is an oasis of laidback hospitality, lush tropical foliage and deserted, white sand beaches. A 96-acre private island edged by the Andros Barrier Reef and worldclass bone fishing flats, the island’s southern side is home to an idyllic resort while the even more secluded north coast shoreline offers an untouched expanse of coast for beachcombers and barefoot explorers.', price: '1200', location: "Caribbean", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+sleep(3)
 
 Island.create!(user: gijs, name: 'Nainatheevu', description: 'The Extraordinary Oasis of The Indian Ocean. This island sanctuary is offered only to the discerning buyer who has reached the apogee in society and who is seeking and able to afford the absolute best of the best in the world, while having absolute privacy and unmatched beauty.', price: '5000', location: "Sri Lanka", remote_photo_url: "https://source.unsplash.com/random?island")
 
-sleep(2)
+sleep(3)
 
 Island.create!(user: gijs, name: 'Cave Cay', description: 'Rarely does an island with the attributes of Cave Cay become available. Stunning natural beauty, a protected and private, deep-water harbour and marina with floating cement dock system and 35 dock slips, plus a 2,800 ft. private airstrip make this the perfect private island.
 
@@ -37,10 +38,9 @@ Island.create!(user: gijs, name: 'Strum Island', description: 'Ideal for family 
 
 sleep(3)
 
-Island.create!(user: gijs, name: 'Corfu', description: 'A beautiful 42 acres tropical island with villa & staff quarters set a midst coconut palms, shrubs and other native plants and trees. The island has a white soft sandy beach all around.
+Island.create!(user: ed, name: 'Corfu', description: 'A beautiful 42 acres tropical island with villa & staff quarters set a midst coconut palms, shrubs and other native plants and trees. The island has a white soft sandy beach all around.
 
 A large 200 acre shallow turquoise lagoon with crystalline waters encircles the island. And the lagoon in its turn is fully encircled by a healthy house reef, which protects the lagoon and the island from eventual heavy sea.', price: '1500', location: "Greece", remote_photo_url: "https://source.unsplash.com/random?island")
-
 
 sleep(3)
 
