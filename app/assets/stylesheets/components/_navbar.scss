@@ -11,7 +11,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
-  padding: 12px 25px;
+  padding: 8px 25px;
   border-bottom: 1px solid rgba(110, 119, 127, 0.1);
   position: sticky;
   width: 100%;
@@ -29,6 +29,11 @@
 
 .nav-item {
   margin-left: 16px;
+}
+
+.nav-item-button {
+  line-height: 2.5;
+  vertical-align: middle;
 }
 
 .nav-link {
